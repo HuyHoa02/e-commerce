@@ -1,0 +1,16 @@
+.addressCard__header {
+    position: relative;
+    display: flex;
+}
+
+.addressCard__header_addAdress {
+    position: absolute;
+    right: 0;
+    top: -10px;
+}
+.addressCard__header_addAdress button{
+    padding: 10px 25px;
+    background-color: var(--primary-color);
+    border: none;
+    color: #fff;
+}

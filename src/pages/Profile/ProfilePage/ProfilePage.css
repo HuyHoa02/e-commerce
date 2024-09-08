@@ -1,0 +1,30 @@
+.profileForm{
+    line-height: 3;
+}
+.profileForm__nameInput{
+    padding: 5px 15px;
+}
+.genderRadio{
+    margin: 5px;
+    margin-left: 10px;
+}
+.profileForm__submit{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 50px 0px;
+}
+.profileForm__submitButton{
+    padding: 10px 35px;
+    background-color: var(--primary-color);
+    border: none;
+    color: #fff;
+}
+.active{
+    color: var(--primary-color);
+    font-weight: 500;
+}
+li{
+    list-style-type: none;
+}

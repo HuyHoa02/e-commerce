@@ -1,0 +1,71 @@
+.sellerCoverImg {
+    background-image: url('https://down-cvs-vn.img.susercontent.com/vn-11134210-7r98o-lqk811jlwr3rc2_tn.webp');
+    width: 390px;
+    height: 140px;
+    background-size: cover;
+    background-position-y: -20px;
+}
+.sellerCoverImg::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    pointer-events: none;
+}
+.sellerAvatar{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+}
+.sellerCoverTitle {
+    margin-left: .5rem;
+}
+
+.sellerCoverTitle .title {
+    font-size: 20px;
+    font-weight: 500;
+    color: #fff;
+    line-height: 1.5;
+}
+.seller__greendot{
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #42ab17;
+    margin-right: 10px;
+}
+.sellerCover__button {
+    width: 100%; 
+    background-color: transparent;
+    border-radius: 2px;
+    margin-right: 5px ;
+    color: #fff;
+}
+.sellerVoucher{
+    box-sizing: border-box;
+    padding-left: 20px;
+    height: 120px;
+    margin-right: 20px;
+    color: red;
+    border: 0.5px solid #F8D0D3;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: #FFF4F4;
+}
+.voucherButton {
+    padding: 10px 35px;
+    background-color: red;
+    border: 1px solid red;
+    border-radius: 4px;
+    color: #fff;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+}
+.voucherButton:hover{
+    background-color: rgb(193, 25, 25);
+}
