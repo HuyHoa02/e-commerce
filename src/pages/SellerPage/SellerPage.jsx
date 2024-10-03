@@ -67,7 +67,7 @@ function SellerPage() {
     return (
         <div>
             <Row style={{ marginTop: 20 }}>
-                <Col span={5} offset={1}>
+                <Col span={5} offset={2}>
                     <Card
                         hoverable
                         className='sellerCoverImg'
@@ -99,7 +99,7 @@ function SellerPage() {
                         </Row>
                     </Card>
                 </Col>
-                <Col span={15} offset={2}>
+                <Col span={15} offset={2} style={{boxSizing: "border-box", minWidth: '850px'}}>
                     <Card style={{ height: '140px' }} bordered={false}>
                         <Row>
                             <Col span={10} offset={1}><ShopOutlined />  Sản Phẩm: 394</Col>
@@ -119,7 +119,9 @@ function SellerPage() {
                 </Col>
 
             </Row>
-            <Row style={{ marginTop: '20px' }}>
+
+            
+            <Row style={{ marginTop: '20px', minWidth: '800px'}}>
                 <Col span={5} offset={2}>TẤT CẢ SẢN PHẨM</Col>
                 <Col span={5}>BÁN CHẠY</Col>
                 <Col span={5}>SẢN PHẨM MỚI</Col>
@@ -128,11 +130,11 @@ function SellerPage() {
             <br />
             <Row style={{ marginTop: '50px' }}>
                 <Col span={20} offset={2}>
-                    <h2>😍Voucher Siêu Hot Từ SBOOKS 😍</h2>
+                    <Row><h2>😍Voucher Siêu Hot Từ SBOOKS 😍</h2></Row>
                     <Carousel responsive={responsive}>
-                        {vouchers.map(voucher => {
+                        {vouchers.map((voucher, index) => {
                             return (
-                                <Row className='sellerVoucher' align="middle">
+                                <Row className='sellerVoucher' align="middle" key={index}>
                                     <Col span={15}>
                                         <div >
                                             <p>Giảm {voucher.discount}</p>

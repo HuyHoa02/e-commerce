@@ -56,6 +56,7 @@
     border-radius: 4px;
     font-size: 16px;
     background-color: #FFF4F4;
+    min-width: 400px;
 }
 .voucherButton {
     padding: 10px 35px;

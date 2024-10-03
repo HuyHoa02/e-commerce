@@ -402,20 +402,6 @@ function HeaderComponent() {
             </div>
           </div>
         </div>
-        <ul className="header__sort-bar">
-          <li className="header__sort-item">
-            <a href="" className="header__sort-link">Liên Quan</a>
-          </li>
-          <li className="header__sort-item header__sort-item--active">
-            <a href="" className="header__sort-link">Mới Nhất</a>
-          </li>
-          <li className="header__sort-item">
-            <a href="" className="header__sort-link">Bán chạy</a>
-          </li>
-          <li className="header__sort-item">
-            <a href="" className="header__sort-link">Giá</a>
-          </li>
-        </ul>
       </header>
     </div>
   )
